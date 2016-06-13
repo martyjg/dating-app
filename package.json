@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/martyjg/dating-app/issues"
   },
-  "homepage": "https://github.com/martyjg/dating-app#readme"
+  "homepage": "https://github.com/martyjg/dating-app#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "15.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "http-server": "^0.8.5",
+    "node-sass": "^3.7.0",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
