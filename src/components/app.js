@@ -1,6 +1,8 @@
 import React from 'react';
 import UserIndex from 'components/userIndex.js';
 
+require('../../sass/component_import.scss');
+
 export default class App extends React.Component {
     render() {
         return (
