@@ -1,9 +1,11 @@
 jest.unmock('../src/components/userIndex.js');
+// jest.unmock('../src/components/userThumbnail.js');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
-import UserIndex from '../src/components/UserIndex';
+import UserIndex from '../src/components/userIndex';
+// import UserThumbnail from '../src/components/userThumbnail';
 
 describe('userIndex', () => {
 
@@ -14,8 +16,6 @@ describe('userIndex', () => {
         )
 
         var result = userIndex.componentDidMount;
-
-        console.log(result);
         
     })
 

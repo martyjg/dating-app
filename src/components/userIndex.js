@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import UserThumbnail from 'components/userThumbnail.js';
+import UserThumbnail from './userThumbnail.js';
 
 export default class UserIndex extends React.Component {
 
@@ -47,7 +47,7 @@ export default class UserIndex extends React.Component {
 
 
             })}
-            
+
         </div>
         )
     };
