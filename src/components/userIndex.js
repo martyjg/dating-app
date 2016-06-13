@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import UserThumbnail from 'components/userThumbnail.js';
 
 export default class UserIndex extends React.Component {
 
@@ -36,8 +37,17 @@ export default class UserIndex extends React.Component {
 
     render() {
         return (
-        <div>
-            User Index will go here
+        <div className="user_index">
+
+            {this.state.users.map(function(user) {
+
+                return (
+                    <UserThumbnail userData={user} key={user.id} />
+                )
+
+
+            })}
+            
         </div>
         )
     };

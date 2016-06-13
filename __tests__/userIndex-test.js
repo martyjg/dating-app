@@ -14,6 +14,8 @@ describe('userIndex', () => {
         )
 
         var result = userIndex.componentDidMount;
+
+        console.log(result);
         
     })
 
