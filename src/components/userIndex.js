@@ -12,7 +12,7 @@ export default class UserIndex extends React.Component {
 
     // AJAX request made for data as soon as UserIndex is rendered
     componentDidMount() {
-        this.getUserData();
+        return this.getUserData();
     };
 
     getUserData() {
@@ -21,7 +21,6 @@ export default class UserIndex extends React.Component {
         request.onload = function() {
           if (request.status >= 200 && request.status < 400) {
             var data = JSON.parse(request.responseText);
-            console.log(this);
             this.setUserData(data);
           }
         }.bind(this);
@@ -40,6 +39,6 @@ export default class UserIndex extends React.Component {
         <div>
             User Index will go here
         </div>
-        );
+        )
     };
 }
