@@ -1,0 +1,22 @@
+.user_profile_container {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+
+    .user_profile {
+        width:300px;
+        height:300px;
+        margin:0 auto;
+        background:green;
+        position:fixed;
+        left:50%;
+        top:50%;
+        margin-left:-150px;
+        margin-top:-150px;
+        border: 5px solid #ccc;
+        z-index: 777777;
+    }
+}
