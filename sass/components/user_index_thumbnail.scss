@@ -8,40 +8,43 @@
     .user_thumbnail {
         min-width: $thumbnailSize;
         box-sizing: border-box;
+        text-align: center;
 
         @include respond-to(xsmall) {
-            padding: 4px;
+            padding: 6px;
             width: 100%;
         }
 
         @include respond-to(small) {
-            &:nth-child(2n+1) { padding: 4px; }
-            &:nth-child(2n) { padding: 4px 4px 4px 0; }
+            &:nth-child(2n+1) { padding: 6px; }
+            &:nth-child(2n) { padding: 6px 6px 6px 0; }
             width: 50%;
         }
 
         @include respond-to(medium) {
-            &:nth-child(3n+2) { padding: 4px; }
-            &:nth-child(3n+1) { padding: 4px 0 4px 0; }
-            &:nth-child(3n) { padding: 4px 4px 4px 0; }
+            padding: 6px 6px 6px 0;
+            &:nth-child(3n+1) { padding: 6px; }
             width: 33.33%;
         }
 
         @include respond-to(large) {
-            &:nth-child(4n+3) { padding: 4px; }
-            &:nth-child(4n+2), &:nth-child(4n+1) { padding: 4px 0 4px 0; }
-            &:nth-child(4n) { padding: 4px 4px 4px 0; }
+            padding: 6px 6px 6px 0;
+            &:nth-child(4n+1) { padding: 6px; }
             width: 25%;
         }
 
         @include respond-to(xlarge) {
-            &:nth-child(5n+4) { padding: 4px; }
-            &:nth-child(5n+3), &:nth-child(5n+2), &:nth-child(5n+1) { padding: 4px 0 4px 0; }
-            &:nth-child(5n) { padding: 4px 4px 4px 0; }
+            padding: 6px 6px 6px 0;
+            &:nth-child(5n+1) { padding: 6px; }
             width: 20%;
         }
 
+        span {
+            font-size: 26px;
+        }
+
         .user_thumbnail_image_container {
+            background-color: salmon;
             position: relative;
             @include calc-ratio(1, 1);
 
