@@ -20,11 +20,18 @@ export default class UserThumbnail extends React.Component {
     };
 
     render() {
+
+        var imageSource = {
+          backgroundImage: 'url(' + this.props.userData.preview_pic.url + ')',
+        };
+
         return (
             <div className="user_thumbnail" onClick={this.thumbnailClick}>
                 {this.state.focussed ? <UserProfile className="user_profile_container" userData={this.props.userData} /> : null}
                 <span>{this.props.userData.name}</span>
-                <img src={this.props.userData.preview_pic.url} />
+                <div className="user_thumbnail_image_container">
+                    <div className="user_thumbnail_image" style={imageSource} />
+                </div>
             </div>
         )
     };

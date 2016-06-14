@@ -1,6 +1,8 @@
-$xsmall: 620px;
-$small: 730px;
-$medium: 960;
+$xsmall: 540px;
+$small: 720px;
+$medium: 960px;
+
+$thumbnailSize: 205px;
 
 @mixin respond-to($media) {
     @if $media == xsmall {
@@ -14,10 +16,16 @@ $medium: 960;
     }
 }
 
+@mixin calc-ratio($width, $height) {
+    padding-bottom: ($height / $width) * 100%
+}
+
 
 .user_index {
 
     display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     width: 90%;
     margin: 0 auto;
 
@@ -32,4 +40,47 @@ $medium: 960;
     @include respond-to(medium) {
         background-color: aquamarine;
     }
+}
+
+.user_thumbnail {
+    min-width: $thumbnailSize;
+    box-sizing: border-box;
+
+    @include respond-to(xsmall) {
+        background-color: red;
+        padding: 4px;
+        width: 100%;
+    }
+
+    @include respond-to(small) {
+        background-color: green;
+
+        &:nth-child(2n+1) {
+            padding: 4px;
+        }
+        &:nth-child(2n) {
+            padding: 4px 4px 4px 0;
+        }
+        width: 50%;
+    }
+
+
+
+    .user_thumbnail_image_container {
+        position: relative;
+        @include calc-ratio(1, 1);
+
+        .user_thumbnail_image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+    }
+
 }
