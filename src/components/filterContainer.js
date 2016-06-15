@@ -9,11 +9,15 @@ const darkMuiTheme = getMuiTheme(darkBaseTheme);
 
 export default class FilterContainer extends React.Component {
 
+    valuesChanged(value) {
+        this.props.ageValuesChanged(value);
+    };
+
     render() {
         return (
             <div className="filter_container">
                 <MuiThemeProvider muiTheme={darkMuiTheme}>
-                    <AgeSlider />
+                    <AgeSlider sendBackSliders={this.valuesChanged.bind(this)}/>
                 </MuiThemeProvider>
             </div>
         )

@@ -15,18 +15,25 @@ export default class AgeSlider extends React.Component {
         }
         this.handleFirstSlider = this.handleFirstSlider.bind(this)
         this.handleSecondSlider = this.handleSecondSlider.bind(this)
+        this.sendValues = this.sendValues.bind(this);
     };
 
     handleFirstSlider(event, value) {
         this.setState({
             sliders: update(this.state.sliders, {firstSlider: {$set: value}})
         })
+        this.sendValues();
     };
 
     handleSecondSlider(event, value) {
         this.setState({
             sliders: update(this.state.sliders, {secondSlider: {$set: value}})
         })
+        this.sendValues();
+    };
+
+    sendValues() {
+        this.props.sendBackSliders(this.state.sliders);
     };
 
 

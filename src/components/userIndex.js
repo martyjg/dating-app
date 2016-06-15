@@ -12,6 +12,7 @@ export default class UserIndex extends React.Component {
             minAge: 18,
             maxAge: 30
         }
+        this.updateAgeSearch = this.updateAgeSearch.bind(this)
     };
 
     // AJAX request made for data as soon as UserIndex is rendered
@@ -38,6 +39,12 @@ export default class UserIndex extends React.Component {
         console.log(data.items);
     };
 
+    updateAgeSearch(value) {
+        this.setState({minAge: value.firstSlider})
+        this.setState({maxAge: value.secondSlider})
+        console.log(this.state)
+    }
+
     render() {
         var minAgeValue = this.state.minAge;
         var maxAgeValue = this.state.maxAge;
@@ -54,7 +61,7 @@ export default class UserIndex extends React.Component {
                 })}
 
             </div>
-                <FilterContainer />
+                <FilterContainer ageValuesChanged={this.updateAgeSearch}/>
             </div>
         )
     };
