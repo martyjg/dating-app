@@ -34,7 +34,7 @@ export default class AgeSlider extends React.Component {
 
     sendValues() {
         this.props.sendBackSliders(this.state.sliders);
-    };
+    }
 
 
     render() {

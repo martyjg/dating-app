@@ -36,13 +36,11 @@ export default class UserIndex extends React.Component {
         this.setState({
             users : data.items
         })
-        console.log(data.items);
     };
 
     updateAgeSearch(value) {
         this.setState({minAge: value.firstSlider})
         this.setState({maxAge: value.secondSlider})
-        console.log(this.state)
     }
 
     render() {

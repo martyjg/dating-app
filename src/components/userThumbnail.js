@@ -12,7 +12,6 @@ export default class UserThumbnail extends React.Component {
     };
 
     thumbnailClick() {
-        console.log(this.props.userData.name);
         if (this.state.focussed) {
             this.setState({ focussed: false })
         } else {
@@ -21,7 +20,6 @@ export default class UserThumbnail extends React.Component {
     };
 
     checkStatus() {
-        console.log("THIS GOT CALLED");
         if (this.props.userData.online_status === "ONLINE") {
             this.setState({ onlineStatus: "online" })
         } else {
