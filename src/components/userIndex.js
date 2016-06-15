@@ -8,7 +8,9 @@ export default class UserIndex extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            users: []
+            users: [],
+            minAge: 18,
+            maxAge: 30
         }
     };
 
@@ -37,21 +39,23 @@ export default class UserIndex extends React.Component {
     };
 
     render() {
+        var minAgeValue = this.state.minAge;
+        var maxAgeValue = this.state.maxAge;
         return (
-        <div className="user_index">
+            <div>
+            <div className="user_index">
 
-            {this.state.users.map(function(user) {
+                {this.state.users.map(function(user) {
+                    if (user.personal.age >= minAgeValue && user.personal.age <= maxAgeValue) {
+                        return (
+                            <UserThumbnail userData={user} key={user.id} />
+                        )
+                    }
+                })}
 
-                return (
-                    <UserThumbnail userData={user} key={user.id} />
-                )
-
-
-            })}
-
-            <FilterContainer />
-
-        </div>
+            </div>
+                <FilterContainer />
+            </div>
         )
     };
 }
