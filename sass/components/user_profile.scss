@@ -21,10 +21,20 @@
         z-index: 777777;
 
         .user_profile_image {
-            width: 40%;
-            height: 160px;
+            max-width: 45%;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 200px;
             background-repeat: no-repeat;
             background-size: contain;
+            background-position: center;
+        }
+
+        .user_profile_details {
+
+            ul {
+                list-style-type: none;
+            }
         }
     }
 }
