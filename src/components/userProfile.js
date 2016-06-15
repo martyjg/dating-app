@@ -7,12 +7,22 @@ export default class UserProfile extends React.Component {
 
         var imageSource = { backgroundImage: 'url(' + this.props.userData.preview_pic.url + ')' };
 
+        if (this.props.userData.sexual.anal_position != "NOENTRY") {
+            var analPosition = this.props.userData.sexual.anal_position + "!!!!";
+        }
+
         return (
             <div className="user_profile_container">
                 <div className="user_profile">
-                    <h3>{this.props.userData.name}</h3>
+                    <h2>{this.props.userData.name}</h2>
 
-                    <div className="user_profile_image" style={imageSource}/>
+                    <div className="user_profile_image" style={imageSource} />
+                    <div className="user_profile_details">
+                        <ul>
+                            <li><span>Age: </span><span>{this.props.userData.personal.age}</span></li>
+                            <li><span>{analPosition}</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )
