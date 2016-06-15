@@ -13,3 +13,6 @@ http://andrewhfarmer.com/react-ajax-best-practices/
 
 Testing with Jest
 https://facebook.github.io/jest/docs/tutorial-react.html#content
+
+Material-UI component (slider)
+http://www.material-ui.com/#/components/slider
