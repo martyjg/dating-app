@@ -16,3 +16,6 @@ https://facebook.github.io/jest/docs/tutorial-react.html#content
 
 Material-UI component (slider)
 http://www.material-ui.com/#/components/slider
+
+Object immutability helper (React addon)
+https://facebook.github.io/react/docs/update.html
