@@ -27,8 +27,6 @@ This application is built with React using ES6 syntax. SASS is used for style pr
 #### Useful/Interesting links
 Here are some links to useful tutorials that I found outside of the offical docs when building Gay Mercutio:
 
-React with ES6 syntax:
-
 [Syntactic differences between traditional React and React with ES6](https://toddmotto.com/react-create-class-versus-component/)
 
 [On binding methods in React components](http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/)
