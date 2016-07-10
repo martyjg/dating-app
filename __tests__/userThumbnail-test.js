@@ -21,14 +21,10 @@ describe('userThumbnail', () => {
 
         const thumbnailNode = ReactDOM.findDOMNode(userThumbnail);
 
-        console.log("USER THUMBNAIL", userThumbnail);
-        console.log("USER THUMBNAIL NODE FUCK MY LIFE", thumbnailNode);
-
-
         TestUtils.Simulate.click(thumbnailNode);
 
         // expect(userThumbnail.thumbnailClick).toBeCalled();
-        
+
     })
 
 })
