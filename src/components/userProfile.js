@@ -21,7 +21,6 @@ export default class UserProfile extends React.Component {
                     <div className="user_profile_details">
                         <ul>
                             <li><span>Age: </span><span>{this.props.userData.personal.age}</span></li>
-                            <li><span>{analPosition}</span></li>
                         </ul>
                     </div>
                 </div>
