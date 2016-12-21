@@ -1,5 +1,4 @@
-# Gay Mercutio
-### Dating App task for Erasys
+# Dating App task for Erasys
 
 Setup
 ```
@@ -20,7 +19,6 @@ ___
 * Age filter!
 * Blurring of offline users' images!
 * Responsive design!
-* 500+ handsome automatically-generated guys!
 
 #### Build
 This application is built with React using ES6 syntax. SASS is used for style preprocessor and webpack as a bundler.
@@ -44,7 +42,7 @@ Here are some links to useful tutorials that I found outside of the offical docs
 
 ___
 
-### The future for Gay Mercutio
+### What next
 * Writing more robust tests to drive the development
 * Revise slider controls for smoother user interaction
 * Revise User Profile to be more responsive and display more user details
