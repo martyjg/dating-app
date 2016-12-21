@@ -7,7 +7,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="app_main">
-                <h1>Gay Mercutio</h1>
+                <h1>Dating App</h1>
                 <UserIndex />
             </div>
         );
