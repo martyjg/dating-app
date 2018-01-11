@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+
 import UserProfile from './userProfile.js';
 
 export default class UserThumbnail extends React.Component {

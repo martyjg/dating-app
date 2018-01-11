@@ -24,7 +24,7 @@ ___
 This application is built with React using ES6 syntax. SASS is used for style preprocessor and webpack as a bundler.
 
 #### Useful/Interesting links
-Here are some links to useful tutorials that I found outside of the offical docs when building Gay Mercutio:
+Here are some links to useful tutorials that I found outside of the offical docs when building the Dating App:
 
 [Syntactic differences between traditional React and React with ES6](https://toddmotto.com/react-create-class-versus-component/)
 

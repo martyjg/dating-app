@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+
 import UserThumbnail from './userThumbnail.js';
 import FilterContainer from './filterContainer.js';
 
@@ -59,7 +59,7 @@ export default class UserIndex extends React.Component {
                 })}
 
             </div>
-                <FilterContainer ageValuesChanged={this.updateAgeSearch}/>
+                {/*<FilterContainer ageValuesChanged={this.updateAgeSearch}/>*/}
             </div>
         )
     };
